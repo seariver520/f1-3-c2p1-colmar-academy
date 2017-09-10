@@ -1,0 +1,438 @@
+html {
+  font-family:Helvetica;
+  font-size:18px;
+  background-color: hsl(0,0%,95%);
+}
+
+body {
+  margin:0px;
+}
+
+p{
+  color:hsl(0,0%,35%);
+  font-family:"Nunito", Helvetica;
+}
+
+h1 {
+  font-family:"Open Sans", Helvetica;
+  color:hsl(0,0%,25%);
+  font-weight:bold;
+}
+
+h4 {
+  font-family:"Nunito", Helvetica;
+  color:hsl(0,0%,30%);
+  font-weight:bold;
+  font-size:1.5rem;
+}
+
+header{
+  display:flex;
+  justify-content: space-between;
+  height:64px;
+  background-color: white;
+  position:fixed;
+  z-index:5;
+  width:100%;
+  font-family:"Nunito", Helvetica;
+}
+
+header .logo {
+  font-weight:bold;
+  display:flex;
+  padding-left:24px;
+  font-family:"Nunito", sans-serif;
+  font-size:1.25rem;
+  align-items: center;
+}
+
+header .logo img {
+  height:40px;
+  padding-right:2px;
+}
+
+header .logo p {
+  height:32px;
+  color:#000000;
+}
+
+header .logo p span {
+  color:#c0c0c0;
+  font-weight:normal;
+}
+
+
+header ul {
+  list-style:none;
+  display:flex;
+  padding-right:8px;
+  height:32px;
+}
+
+header ul li {
+  padding-right:16px;
+}
+
+header ul li:hover {
+  font-weight:bold;
+}
+
+#push {
+  position:relative;
+  top:64px;
+}
+
+
+.first {
+  background-color: hsl(0,0%,80%);
+  display:flex;
+}
+
+.first img {
+  width:60%;
+  height:600px;
+  padding:32px 24px;
+}
+
+.first .text {
+  font-family:Helvetica;
+  margin:auto;
+  color:hsl(0,0%,20%);
+  font-weight:bold;
+  width:35%;
+}
+
+.first .text h1 {
+  font-size:3rem;
+}
+
+.first .text p {
+  font-size:1.5rem;
+  color:hsl(0,0%,30%);
+}
+
+.first .text .btn {
+  background-color:hsl(0,0%,25%);
+  padding:8px 80px;
+  color:white;
+  font-family:"Nunito", Helvetica;
+  font-weight: normal;
+  text-align:center;
+  width:40%;
+}
+
+.first .text .btn:hover {
+  background-color:hsl(20,100%,50%);
+}
+.second {
+  display:flex;
+}
+
+.section img {
+  width:100%;
+}
+
+.section h1 {
+  margin-bottom:0;
+}
+
+.section p {
+  margin-top:24px;
+}
+
+.section {
+  width:60%;
+  padding:32px 24px;
+  border-right:solid lightgrey 1px;
+}
+
+.info {
+  width:40%;
+  padding-top:16px;
+}
+
+.information {
+  display:flex;
+}
+
+.information img {
+  height:50%;
+  width:35%;
+  padding:16px;
+}
+
+.information .text {
+  width:65%;
+  padding-right:16px;
+  margin:auto;
+}
+
+#more:hover {
+  font-weight:bold;
+}
+
+#more {
+  color:hsl(180, 100%, 38%);
+}
+
+.course {
+  padding:32px 56px;
+  text-align:center;
+  background-color: hsl(0,0%,90%);
+}
+
+.course h1 {
+  margin-bottom:32px;
+}
+
+.course .boxes {
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  flex-grow:1;
+  flex-shrink:1;
+}
+
+.course .box img{
+  height:auto;
+  width:100%;
+}
+
+.course .box {
+  background-color: white;
+  text-align:left;
+  padding-bottom:24px;
+  margin:16px;
+  width:30%;
+  opacity:0.75;
+  transition:opacity 0.5s ease 100ms;
+}
+
+.course .box:hover{
+  opacity:1;
+}
+
+
+.course .box h4:hover {
+  color:red;
+}
+
+.course h4 {
+  padding-left:16px;
+  margin-top:16px;
+}
+
+.course p {
+  padding-left:16px;
+  margin-top:8px;
+  margin-bottom:0px;
+}
+
+.thesis {
+  margin-top:0px;
+}
+
+.thesis h1 {
+  text-align:center;
+  margin-bottom:8px;
+}
+
+.flex {
+  padding:24px;
+  display:flex;
+}
+
+.video {
+  width:60%;
+  padding-right:24px;
+}
+
+.video video{
+  width:100%;
+}
+
+.video h4 {
+  margin-top:24px;
+  margin-bottom:0px;
+}
+
+.video p {
+  margin-top:8px;
+  margin-bottom:0;
+}
+
+.exhibit {
+  width:40%;
+}
+
+#grey {
+  background-color: hsl(0,0%,80%);
+}
+
+footer {
+  padding-left:24px;
+  background-color:white;
+  display:flex;
+  justify-content:space-between;
+  font-family:"Nunito", Helvetica, Sans-serif;
+  border-top:1px solid lightgrey;
+}
+
+footer p {
+  color:black;
+}
+
+footer ul {
+  display:flex;
+}
+
+footer li{
+  list-style: none;
+  padding-right:16px;
+}
+
+footer li:hover{
+  font-weight: bold;
+}
+
+@media only screen and (max-width:480px) {
+  header .logo {
+    width:90%;
+    display:flex;
+    justify-content:space-between;
+  }
+
+  header .logo img {
+    padding-right:0px;
+  }
+
+  .first {
+    display:block;
+  }
+  .first img {
+    width:100%;
+    padding:0px;
+    margin:0px;
+    height:auto;
+  }
+
+  .first .text {
+    width:80%;
+    padding:32px 16px;
+  }
+  .first .text h1{
+    font-size:2.3rem;
+    margin-top:0px;
+    margin-bottom:0px;
+  }
+  .first .text p{
+    font-size:1.5rem;
+    margin-top:32px;
+    margin-bottom:24px;
+  }
+  .first .text .btn {
+    width:45%;
+  }
+
+  .info {
+    width:100%;
+    padding:8px 0px 0px 0px;
+  }
+
+  .info .information {
+    display:block;
+    padding:8px 16px;
+  }
+
+  .info .information img {
+    width:100%;
+    height:auto;
+    padding:16px 0px;
+  }
+
+  .info .information .text {
+    width:95%;
+    padding-left:16px;
+  }
+
+  .info .information .text h4{
+    margin-top:0px;
+    margin-bottom:0px;
+  }
+
+  .info .information .text p {
+    padding-bottom:0px;
+  }
+
+  .course h1 {
+    margin-top:0;
+    background-color: inherit;
+  }
+
+  .course p, .course img{
+    display:none;
+  }
+
+  .course {
+    background-color: inherit;
+    padding:32px 0px;
+    border-top:1px solid lightgrey;
+  }
+
+  .course .boxes {
+    flex-direction:column;
+  }
+
+  .course .boxes .box {
+    width:90%;
+    background-color: hsl(0,0%,80%);
+    padding-top:16px;
+    padding-bottom:24px;
+    height:60px;
+    margin:4px 16px;
+  }
+
+
+  .thesis {
+    border-top:1px solid lightgrey;
+  }
+
+  .thesis h1{
+    margin-top:32px;
+    margin-bottom:16px;
+  }
+
+  .thesis .flex {
+   padding:0px;
+  }
+
+  .video {
+    width:100%;
+    padding:0px;
+  }
+
+  .video video {
+    width:100%;
+    padding-bottom:24px;
+  }
+
+  footer {
+    font-size:0.75rem;
+  }
+
+  #grey {
+    background-color: inherit;
+  }
+
+  #desktop {
+    display:none;
+  }
+}
+
+@media only screen and (min-width:481px) {
+  #mobile {
+    display:none;
+  }
+}
